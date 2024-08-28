@@ -8,6 +8,22 @@
 
 - 탈출 문제는 그리드에서 시작점 (x1, y1), (x2, y2), …, (xm, ym)이 주어졌을 때 각 시작점에서 경계로 가는 m개의 경로가 존재하는지 여부를 결정한다.
 
+---
+
+An *n* x *n **grid*** is an undirected graph consisting of *n* rows and *n* columns of vertices, as shown in Figure 27.12. We denote the vertex in the *i*th row and the *j*th column by (*i, j*). All vertices in a grid have exactly four neighbors, except for the boundary vertices, which are the points (*i, j*) for which *i =* 1*, i = n, j =* 1*, or j = n.*
+
+![img](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/626_a.gif)
+
+#### Figure 27.12 Grids for the escape problem. Starting points are black, and other grid vertices are white. (a) A grid with an escape, shown by shaded paths. (b) A grid with no escape.
+
+Given *m* ![img](http://staff.ustc.edu.cn/~csli/graduate/algorithms/images/lteq12.gif) *n*2 starting points (*x*1, *y*1), (*x*2, *y*2), . . . , (*xm*, *ym*) in the grid, the ***escape problem*** is to determine whether or not there are *m* vertex-disjoint paths from the starting points to any *m* different points on the boundary. For example, the grid in Figure 27.12(a) has an escape, but the grid in Figure 27.12(b) does not.
+
+**a.** Consider a flow network in which vertices, as well as edges, have capacities. That is, the positive net flow entering any given vertex is subject to a capacity constraint. Show that determining the maximum flow in a network with edge and vertex capacities can be reduced to an ordinary maximum-flow problem on a flow network of comparable size.
+
+***b***. Describe an efficient algorithm to solve the escape problem, and analyze its running time.
+
+---
+
 ## 동작 순서
 
 |      | 동작                                                         | 시각화                                                       |
